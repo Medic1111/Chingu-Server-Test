@@ -46,3 +46,17 @@ Content-Type: application/json
 
 GET http://localhost:3002/api/v1/validate
 Authorization: eyJhbGciOiJIUzI1IsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1lZGljMTExMTExIiwiaWF0IjoxNjY5MTQxMzI2LCJleHAiOjE2NjkxNDE5MjZ9.2YRkSO_UqotFD2VlmG_H3iQNd_DgJUUNF0KfYw-p974
+
+###
+
+# Seed: DO NOT RUN BEFORE READING THIS
+# Hosted DB already has the products inserted
+# Run only if you have YOUR PERSONAL mongodb URI in .env
+
+# GET http://localhost:3002/api/v1/dev/seed
+
+###
+
+# All Products
+
+GET http://localhost:3002/api/v1/products

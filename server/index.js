@@ -16,16 +16,27 @@ const db_connection = require("./config/dbconn.config");
 db_connection();
 
 // ROUTES
+const seedDatabase = require("./routes/seed");
 const validate = require("./routes/validate");
 const loginRoute = require("./routes/login");
 const registerRoute = require("./routes/register");
+const allProducts = require("./routes/products");
+const { Product } = require("./models/models");
 
 // PERSONAL MIDDLEWARES
+app.use("/", seedDatabase);
 app.use("/", validate);
 app.use("/", loginRoute);
 app.use("/", registerRoute);
+app.use("/", allProducts);
 
-// DEV ROUTE
+// DEV ROUTE: Run while connected to personal MONGO URI
+
+// app.get("/api/v1/products", (req, res) => {
+//   Product.find()
+//     .then((docs) => res.status(200).json(docs))
+//     .catch((err) => console.log(err));
+// });
 
 // UNIVERSAL ROUTE
 
