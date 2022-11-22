@@ -39,3 +39,35 @@ axios.get("/api/v1/login")
 
 DB_URI=your_mongodb_uri_without_quotes
 TOKEN_SECRET=anySecretStringWithoutQuotes
+
+### Register Route:
+
+- Is currently expecting an Obj with the following properties:
+
+1. email
+2. username
+3. password
+
+> Check test.rest to see the object being sent if in doubt =)
+
+### Login Route:
+
+- Is currently expecting an Obj with the following properties:
+
+1. username
+2. password
+   (email may be sent and will be ignored server side)
+
+> Check test.rest to see the object being sent if in doubt =)
+
+### Validate Route
+
+- Is currently expecting a STRING being sent with HEADERS
+
+> Check test.rest to see the string being sent if in doubt =)
+
+---
+
+If able to make this integration and satisfied, Please let me know so we can proceed with adding products to the DB and creating the getAllProducts route
+
+I really hope this helps.
