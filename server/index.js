@@ -30,13 +30,7 @@ app.use("/", loginRoute);
 app.use("/", registerRoute);
 app.use("/", allProducts);
 
-// DEV ROUTE: Run while connected to personal MONGO URI
-
-// app.get("/api/v1/products", (req, res) => {
-//   Product.find()
-//     .then((docs) => res.status(200).json(docs))
-//     .catch((err) => console.log(err));
-// });
+// DEV :
 
 // UNIVERSAL ROUTE
 
