@@ -60,3 +60,29 @@ Authorization: eyJhbGciOiJIUzI1IsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1lZGljMTExMT
 # All Products
 
 GET http://localhost:3002/api/v1/products
+
+
+###
+
+# LOGIN SUCCESS REMOTE
+
+POST https://voyage-server.onrender.com/api/v1/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "medic111111",
+  "password": "password"
+}
+
+###
+
+# REGISTER
+
+POST https://voyage-server.onrender.com/api/v1/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "medic121@medic.com",
+  "username": "medic11211",
+  "password": "password"
+}
