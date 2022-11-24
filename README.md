@@ -66,8 +66,29 @@ TOKEN_SECRET=anySecretStringWithoutQuotes
 
 > Check test.rest to see the string being sent if in doubt =)
 
----
+### Add Product to Cart
 
-If able to make this integration and satisfied, Please let me know so we can proceed with adding products to the DB and creating the getAllProducts route
+- Is a PUT request with Params
+- Expects a username and a Product id
+
+> ex:
+
+http://localhost:3002/api/v1/medic111111/cart/new/637d3d90d02308f12deffcf8
+
+> Check test.rest to see the call being sent if in doubt, and observe the response =)
+
+### Remove Product From Cart
+
+- Is a PUT request with Params
+- Expects a username and a Product id
+- Will Remove x amount of items with that id
+
+> ex:
+
+http://localhost:3002/api/v1/medic111111/cart/new/637d3d90d02308f12deffcf8
+
+> Check test.rest to see the call being sent if in doubt, and observe the response =)
+
+---
 
 I really hope this helps.

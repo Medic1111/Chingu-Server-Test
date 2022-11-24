@@ -21,7 +21,9 @@ const validate = require("./routes/validate");
 const loginRoute = require("./routes/login");
 const registerRoute = require("./routes/register");
 const allProducts = require("./routes/products");
-const { Product } = require("./models/models");
+const addRoute = require("./routes/add");
+const removeRoute = require("./routes/remove");
+const { Product, User } = require("./models/models");
 
 // PERSONAL MIDDLEWARES
 app.use("/", seedDatabase);
@@ -29,6 +31,8 @@ app.use("/", validate);
 app.use("/", loginRoute);
 app.use("/", registerRoute);
 app.use("/", allProducts);
+app.use("/", addRoute);
+app.use("/", removeRoute);
 
 // DEV :
 
