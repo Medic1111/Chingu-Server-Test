@@ -91,6 +91,20 @@ Content-Type: application/json
 
 # Add Product To Cart
 
+PUT https://voyage-server.onrender.com/api/v1/medic111111/cart/new/637d3d90d02308f12deffcf8 HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Remove Product From Cart
+
+PUT https://voyage-server.onrender.com/api/v1/medic111111/cart/remove/637d3d90d02308f12deffcf8 HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Add Product To Cart
+
 PUT http://localhost:3002/api/v1/medic111111/cart/new/637d3d90d02308f12deffcf8 HTTP/1.1
 Content-Type: application/json
 
