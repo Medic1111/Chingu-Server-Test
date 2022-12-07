@@ -23,6 +23,7 @@ const registerRoute = require("./routes/register");
 const allProducts = require("./routes/products");
 const addRoute = require("./routes/add");
 const removeRoute = require("./routes/remove");
+const checkoutRoute = require("./routes/checkout");
 const { Product, User } = require("./models/models");
 
 // PERSONAL MIDDLEWARES
@@ -33,6 +34,7 @@ app.use("/", registerRoute);
 app.use("/", allProducts);
 app.use("/", addRoute);
 app.use("/", removeRoute);
+app.use("/", checkoutRoute);
 
 // DEV :
 
